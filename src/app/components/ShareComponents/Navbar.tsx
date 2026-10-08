@@ -1,16 +1,13 @@
+'use client'
 import Image from "next/image";
 import Link from "next/link";
 
 const Navbar = () => {
     const date = new Date().toLocaleDateString("bn-BD", {
-        weekday: "long",
-        day: "numeric",
-        month: "long",
-        year: "numeric",
+        dateStyle:'full'
     });
 
     return (
-        <>
         <nav className="sticky top-0 z-50 w-full bg-white/90 border-b border-gray-100">
             <div className="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
                 <div className="flex items-center gap-3">
@@ -30,20 +27,13 @@ const Navbar = () => {
                 </div>
 
                 <div className="flex items-center gap-4">
-                    <Link href="/signin" className="font-bold hover:bg-gray-200 hover:border-gray-400 hover: px-5 py-3 rounded-xl">
+                    <Link href="/signin" className="font-bold hover:bg-gray-200 hover:border-gray-400 px-5 py-3 rounded-xl">
                         সাইন ইন
                     </Link>
                     <Link href='' className="bg-green-600 hover:bg-green-800 text-white border rounded-xl px-5 py-3 font-bold" >সাইন আপ</Link>
                 </div>
             </div>
         </nav>
-
-        <div className="sticky top-0 z-50 w-full bg-white/90 border-b border-gray-100">
-            <div className="max-w-7xl mx-auto px-4 py-3 flex">
-                
-            </div>
-        </div>
-        </>
 
     );
 };
