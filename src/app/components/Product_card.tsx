@@ -13,8 +13,7 @@ const unitBn: Record<string, string> = {
 const Product_card = ({ products }: { products: ProductIType }) => {
   return (
           <Link
-            // href={`/products/${p.slug}`}
-            href=''
+            href={`/products/${products.id}`}
             className="block w-full"
           >
             <Card className="w-full rounded-3xl border hover:border-green-700 bg-white p-5 shadow-sm transition-shadow hover:shadow-md">

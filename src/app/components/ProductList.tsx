@@ -4,24 +4,23 @@ import { Select, ListBox } from "@heroui/react";
 import Product_card from "./Product_card";
 import { ProductIType } from "../types/ProductType";
 
-const AllProducts = ({ products }: { products: ProductIType[] }) => {
+const ProductList = ({ items }: { items: ProductIType[] }) => {
   const [sort, setSort] = useState<string>("default");
-  const sorted = [...products].sort((a, b) => {
+
+  const sorted = [...items].sort((a, b) => {
     if (sort === "asc") return a.today - b.today;
     if (sort === "desc") return b.today - a.today;
     return 0;
   });
 
   return (
-    <div className="mt-10">
-      <h2 className="text-2xl font-bold text-gray-900">সব পণ্য</h2>
-
+    <>
       <div className="mt-3 mb-5 flex flex-wrap items-center justify-between gap-3">
         <p className="text-gray-600">
-          মোট {products.length.toLocaleString("bn-BD")}টি পণ্য দেখানো হচ্ছে
+          মোট {sorted.length.toLocaleString("bn-BD")}টি পণ্য দেখানো হচ্ছে
         </p>
 
-        <div className="flex items-center gap-2">
+       <div className="flex items-center gap-2">
           <h1 className="text-gray-600">সাজান</h1>
           <Select
             aria-label="sajan"
@@ -53,13 +52,13 @@ const AllProducts = ({ products }: { products: ProductIType[] }) => {
         </div>
       </div>
 
-     <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-          {sorted.map((p) => (
-            <Product_card key={p.id} products={p} />
-          ))}
-        </div>
-    </div>
+      <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+        {sorted.map((p) => (
+          <Product_card key={p.id} products={p} />
+        ))}
+      </div>
+    </>
   );
 };
 
-export default AllProducts;
+export default ProductList;
