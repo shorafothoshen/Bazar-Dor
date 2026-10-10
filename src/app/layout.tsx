@@ -21,9 +21,11 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       lang="en"
       className={`${NotoSerifBengali.className} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">
-        <Navbar/>
+      <body className="min-h-full flex flex-col bg-[#f1f5f0]">
+        <div className="sticky top-0 z-50">
+          <Navbar/>
         <CategoryItem/>
+        </div>
         <Marquee/>
         <main>{children}</main>
         <Footer/>
