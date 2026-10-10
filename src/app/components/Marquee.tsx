@@ -3,7 +3,7 @@ import MarqueeText from "react-marquee-text";
 import "react-marquee-text/dist/styles.css";
 const Marquee = async () => {
   const res = await fetch(
-    `${process.env.NEXT_PUBLIC_ANALYTICS_BASE_URL}/api/bazardor/products`,
+    `${process.env.BACK_END_API_BASE_URL}/api/bazardor/products`,
   );
   const data = await res.json();
   return (

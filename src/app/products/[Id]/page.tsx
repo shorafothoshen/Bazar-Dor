@@ -26,7 +26,7 @@ const ProductDetailsPage = async ({ params }: DetailsPageProps) => {
   const { Id } = await params;
 
   const res = await fetch(
-    `${process.env.NEXT_PUBLIC_ANALYTICS_BASE_URL}/api/bazardor/products/${Id}`,
+    `${process.env.BACK_END_API_BASE_URL}/api/bazardor/products/${Id}`,
   );
   const p: ProductIType = await res.json();
 

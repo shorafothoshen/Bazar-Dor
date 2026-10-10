@@ -2,7 +2,7 @@ import { CategoryType } from "../types/ProductType";
 import CategoryList from "./CategoryList";
 
 const CategoryItem = async () => {
-    const res = await fetch(`${process.env.NEXT_PUBLIC_ANALYTICS_BASE_URL}/api/bazardor/categories`);
+    const res = await fetch(`${process.env.BACK_END_API_BASE_URL}/api/bazardor/categories`);
     const data: CategoryType[] = await res.json();
 
     return (

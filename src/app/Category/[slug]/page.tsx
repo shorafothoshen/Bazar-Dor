@@ -8,7 +8,7 @@ interface CategoryPageProps {
 const CategoryPage = async ({ params }: CategoryPageProps) => {
   const { slug } = await params;
 
-  const res = await fetch(`${process.env.NEXT_PUBLIC_ANALYTICS_BASE_URL}/api/bazardor/products?category=${slug}`);
+  const res = await fetch(`${process.env.BACK_END_API_BASE_URL}/api/bazardor/products?category=${slug}`);
   const data: ProductIType[] = await res.json();
 
   const items = data.filter((p) => p.category === slug);
