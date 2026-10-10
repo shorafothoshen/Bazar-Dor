@@ -5,9 +5,10 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import CategoryItem from "./components/CategoryItem";
 import Marquee from "@/app/components/Marquee";
+import { ToastContainer } from "react-toastify";
 
 const NotoSerifBengali = Noto_Serif_Bengali({
-  subsets: ["latin",'bengali'],
+  subsets: ["latin", "bengali"],
 });
 
 export const metadata: Metadata = {
@@ -23,12 +24,15 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
     >
       <body className="min-h-full flex flex-col bg-[#f1f5f0]">
         <div className="sticky top-0 z-50">
-          <Navbar/>
-        <CategoryItem/>
+          <Navbar />
+          <CategoryItem />
         </div>
-        <Marquee/>
-        <main>{children}</main>
-        <Footer/>
+        <Marquee />
+        <main>
+          {children}
+          <ToastContainer />
+        </main>
+        <Footer />
       </body>
     </html>
   );
