@@ -6,7 +6,7 @@ const CategoryItem = async () => {
     const data: CategoryType[] = await res.json();
 
     return (
-        <div className="sticky top-0 z-50 w-full bg-white border-b border-gray-100">
+        <div className="w-full bg-white border-b border-gray-100">
             <div className="max-w-7xl mx-auto px-4 py-3">
                 <CategoryList categories={data} />
             </div>
