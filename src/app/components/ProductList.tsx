@@ -15,7 +15,7 @@ const ProductList = ({ items }: { items: ProductIType[] }) => {
 
   return (
     <>
-      <div className="mt-3 mb-5 flex flex-wrap items-center justify-between gap-3">
+      <div className="mt-3 mb-5 flex items-center justify-between gap-3">
         <p className="text-gray-600">
           মোট {sorted.length.toLocaleString("bn-BD")}টি পণ্য দেখানো হচ্ছে
         </p>

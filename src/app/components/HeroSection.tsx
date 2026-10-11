@@ -1,14 +1,14 @@
-import Image from 'next/image';
-import Link from 'next/link';
-import React from 'react';
+import Image from "next/image";
+import Link from "next/link";
+import React from "react";
 
 const HeroSection = () => {
-    const date = new Date().toLocaleDateString("bn-BD", {
+  const date = new Date().toLocaleDateString("bn-BD", {
     dateStyle: "full",
   });
-    return (
-         <header className="px-4 py-8">
-      <div className="rounded-3xl border border-gray-200 bg-white/70 px-8 py-12 md:px-16 grid md:grid-cols-2 items-center gap-8">
+  return (
+    <header className="px-4 py-8">
+      <div className="rounded-3xl border border-gray-200 text-center md:text-left bg-white px-8 py-12 md:px-16 grid md:grid-cols-2 items-center gap-8">
         <div>
           <p className="inline-block rounded-full bg-green-100 text-green-700 text-sm font-medium px-4 py-1.5">
             {date}
@@ -24,7 +24,7 @@ const HeroSection = () => {
           </p>
 
           <Link
-            href="/products"
+            href="#all-products"
             className="mt-6 inline-block rounded-lg bg-green-600 hover:bg-green-700 text-white font-bold px-6 py-3 shadow-md transition-colors"
           >
             সব পণ্য দেখুন
@@ -32,11 +32,17 @@ const HeroSection = () => {
         </div>
 
         <div className="flex justify-center md:justify-end">
-         <Image src='/bazar-hero.png' alt="bazar-hero image" width={500} height={500} className="w-64 md:w-80 h-auto"/>
+          <Image
+            src="/bazar-hero.png"
+            alt="bazar-hero image"
+            width={500}
+            height={500}
+            className="w-64 md:w-80 h-auto"
+          />
         </div>
       </div>
     </header>
-    );
+  );
 };
 
 export default HeroSection;

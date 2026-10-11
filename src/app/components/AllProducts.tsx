@@ -13,10 +13,10 @@ const AllProducts = ({ products }: { products: ProductIType[] }) => {
   });
 
   return (
-    <div className="mt-10">
+    <div id="all-products" className="mt-10">
       <h2 className="text-2xl font-bold text-gray-900">সব পণ্য</h2>
 
-      <div className="mt-3 mb-5 flex flex-wrap items-center justify-between gap-3">
+      <div className="mt-3 mb-5 flex items-center justify-between gap-3">
         <p className="text-gray-600">
           মোট {products.length.toLocaleString("bn-BD")}টি পণ্য দেখানো হচ্ছে
         </p>

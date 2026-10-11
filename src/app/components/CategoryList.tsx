@@ -6,7 +6,7 @@ import Link from "next/link";
 const CategoryList = ({ categories }: { categories: CategoryType[] }) => {
     const [active, setActive] = useState<string>("");
     return (
-        <div className="flex gap-3 overflow-x-auto">
+        <div className="flex md:gap-3 overflow-x-auto">
             {categories.map((c) => (
                 <Link
                     key={c.id}

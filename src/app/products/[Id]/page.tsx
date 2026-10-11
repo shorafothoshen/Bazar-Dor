@@ -91,7 +91,7 @@ const ProductDetailsPage = async ({ params }: DetailsPageProps) => {
           দামের সারসংক্ষেপ
         </h2>
 
-        <div className="grid gap-4 md:grid-cols-3">
+        <div className="grid gap-4 text-center md:text-left md:grid-cols-3">
           <div className="rounded-2xl border border-gray-200 bg-white p-4">
             <p className="text-xs text-gray-500">সর্বনিম্ন দাম</p>
             <p className="mt-1 text-2xl font-bold text-emerald-600">
