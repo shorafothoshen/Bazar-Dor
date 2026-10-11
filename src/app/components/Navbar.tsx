@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { toast,Bounce } from "react-toastify";
-import { ArrowRightFromSquare,ChevronDown } from "@gravity-ui/icons";
+import { FiChevronDown, FiLogOut } from "react-icons/fi";
 import { Avatar, Dropdown, Label } from "@heroui/react";
 import { authClient } from "@/lib/auth-client";
 
@@ -73,7 +73,7 @@ const Navbar = () => {
                 <span className="hidden text-sm font-semibold text-gray-900 sm:block">
                   {user.name}
                 </span>
-                <ChevronDown className="size-4.5 text-gray-500 hover:bg-gray-100 border-none" />
+                <FiChevronDown  className="size-4.5 text-gray-500 hover:bg-gray-100 border-none" />
               </Dropdown.Trigger>
               <Dropdown.Popover>
                 <div className="px-3 pt-3 pb-1">
@@ -105,7 +105,7 @@ const Navbar = () => {
                   >
                     <div className="flex w-full items-center justify-between gap-2">
                       <Label>সাইন আউট</Label>
-                      <ArrowRightFromSquare className="size-3.5 text-danger" />
+                      <FiLogOut  className="size-3.5 text-danger" />
                     </div>
                   </Dropdown.Item>
                 </Dropdown.Menu>
