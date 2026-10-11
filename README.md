@@ -40,27 +40,23 @@
 
 ### 🏠 হোম পেজ
 
-![হোম পেজ](./screenshots/home.png)
+![হোম পেজ](./public/screenshots/home-1.png)
+![হোম পেজ](./public/screenshots/home-2.png)
+![হোম পেজ](./public/screenshots/home-3.png)
+![হোম পেজ](./public/screenshots/home-4.png)
 
 ### 🗂️ ক্যাটাগরি পেজ
 
-![ক্যাটাগরি পেজ](./screenshots/category.png)
+![ক্যাটাগরি পেজ](./public/screenshots/category.png)
 
 ### 📊 পণ্যের বিস্তারিত পেজ
 
-![পণ্যের বিস্তারিত](./screenshots/product-details.png)
-
-### 🔑 সাইন ইন
-
-![সাইন ইন](./screenshots/sign-in.png)
-
-### 📝 সাইন আপ
-
-![সাইন আপ](./screenshots/sign-up.png)
+![পণ্যের বিস্তারিত](./public/screenshots/product-details-1.png)
+![পণ্যের বিস্তারিত](./public/screenshots/product-details-2.png)
 
 ### 👤 প্রোফাইল
 
-![প্রোফাইল](./screenshots/profile.png)
+![প্রোফাইল](./public/screenshots/profile.png)
 
 
 ---
