@@ -43,7 +43,7 @@ const Navbar = () => {
               alt="bazar-dor logo"
               width={26}
               height={26}
-              className="brightness-0 invert w-5 h-5 sm:w-[26px] sm:h-[26px]"
+              className="brightness-0 invert w-5 h-5 sm:w-6.6 sm:h-6.5"
             />
           </div>
           <div className="min-w-0">

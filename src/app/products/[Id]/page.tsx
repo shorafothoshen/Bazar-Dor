@@ -131,7 +131,7 @@ const ProductDetailsPage = async ({ params }: DetailsPageProps) => {
         </h2>
 
         <div className="overflow-x-auto rounded-2xl border border-gray-200">
-          <table className="w-full min-w-[640px] text-md">
+          <table className="w-full min-w-160 text-md">
             <thead>
               <tr className="bg-white text-gray-500">
                 <th className="px-4 py-3 text-left font-medium">বাজার</th>

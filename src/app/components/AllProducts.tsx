@@ -25,7 +25,7 @@ const AllProducts = ({ products }: { products: ProductIType[] }) => {
           <h1 className="text-gray-600">সাজান</h1>
           <Select
             aria-label="sajan"
-            className="w-[200px]"
+            className="w-26"
             value={sort}
             onChange={(v) => setSort(String(v))}
           >
